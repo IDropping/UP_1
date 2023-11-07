@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Background="Lavender"
+        x:Class="UP_1.Menu"
+        CanResize="False"
+        SizeToContent="WidthAndHeight"
+        Title="Выбор окна">
+    <Border Background="Gainsboro" BorderThickness="2" BorderBrush="Black">  
+    <StackPanel Orientation="Horizontal" Margin="50">
+            <StackPanel Orientation="Vertical" Spacing="25" Margin="10">
+                <Button x:Name="ClientChange" Background= "LightBlue" Content="ChangeOnClient" Click="ClientChange_OnClick"/>
+                <Button x:Name="CoursesChange" Background= "LightBlue" Content="ChangeOnCourses" Click="CoursesChange_OnClick"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Spacing="25" Margin="10">
+                <Button x:Name="FinanceChange" Background= "LightBlue" Content="ChangeOnFinance" Click="FinanceChange_OnClick"/>
+                <Button x:Name="GroupsChange" Background= "LightBlue" Content="ChangeOnGroups" Click="GroupsChange_OnClick"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="25" Margin="10">
+                <Button x:Name="AddExperience" Background= "LightBlue" Content="AddExperience" Click="AddExpirience_OnClick"></Button>
+                <Button x:Name="AddLanguage" Background= "LightBlue" Content="AddLanguage" Click="AddLanguage_OnClick"></Button>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="25" Margin="10">
+                <Button x:Name="AddSchedule" Background= "LightBlue" Content="AddSchedule" Click="AddSchedule_OnClick"></Button>
+                <Button x:Name="AddTeacher" Background= "LightBlue" Content="AddTeacher" Click="AddTeacher_OnClick"></Button>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="25" Margin="10">
+                <Button x:Name="AddAttendance" Background= "LightBlue" Content="AddAttendance" Click="AddAttendance_OnClick"></Button>
+            </StackPanel>
+        </StackPanel>
+        </Border>
+</Window>

@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Background="Lavender"
+        x:Class="UP_1.Windows.FinancialAccounting1"
+        Title="FinancialAccounting1">
+        <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <DataGrid x:Name="FinanceDataGrid"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="False"
+                                  x:CompileBindings="False"
+                                  GridLinesVisibility="All"
+                                  BorderThickness="1"
+                                  BorderBrush="Black"
+                                  Height="250"
+                                  Margin="0,20">
+                                <DataGrid.Columns>
+                                        <DataGridTextColumn Header="ID" Binding="{Binding IDFinance}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Client" Binding="{Binding FinanceClient}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Course" Binding="{Binding FinanceCourse}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="SumToPay" Binding="{Binding SumToPay}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="PayDay" Binding="{Binding DatePay}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                        </DataGrid>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15">
+                                <Border Background="Gainsboro" CornerRadius="10" BorderBrush="Black" Width="400">
+                                        <StackPanel Margin="0,10,10,10" Orientation="Vertical" HorizontalAlignment="Center">
+                                                <TextBox x:Name="idFinanceBox" Watermark="ID" Width="350" Margin="5"></TextBox>
+                                                <TextBox x:Name="clientFinanceBox" Watermark="Client" Width="350" Margin="5"></TextBox>
+                                                <TextBox x:Name="courseFinanceBox" Watermark="Course" Width="350" Margin="5"></TextBox>
+                                                <TextBox x:Name="sumBox" Watermark="Sum" Width="350" Margin="5"></TextBox>
+                                                <TextBox x:Name="payBox" Watermark="PayDay" Width="350" Margin="5"></TextBox>
+                                        </StackPanel>
+                                </Border>
+                                <StackPanel>
+                                        <Button x:Name="addFinance" Background="SandyBrown" Foreground="Black" FontSize="20" BorderBrush="Black" Content="ДобавитьЗапись" Click="AddFinance_OnClick" Width="200" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="10"></Button>
+                                        <Button x:Name="delFinance" Background="SandyBrown" Foreground="Black" FontSize="20" BorderBrush="Black" Content="УдалитьЗапись" Click="DelFinance_OnClick" Width="200" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="10"></Button>
+                                </StackPanel>
+                        </StackPanel>
+                </StackPanel>
+        </Grid>
+</Window>
+

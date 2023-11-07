@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Background="Lavender"
+        x:Class="UP_1.Windows.AddLanguage1"
+        Title="Добавить язык">
+        <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <DataGrid x:Name="LanguageDataGrid"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="False"
+                                  x:CompileBindings="False"
+                                  GridLinesVisibility="All"
+                                  BorderThickness="1"
+                                  BorderBrush="Black"
+                                  Height="250"
+                                  Margin="0,20">
+                                <DataGrid.Columns>
+                                        <DataGridTextColumn Header="ID" Binding="{Binding IDLang}" Width="100"/>
+                                        <DataGridTextColumn Header="Language" Binding="{Binding Language}" Width="200"/>
+                                </DataGrid.Columns>
+                        </DataGrid>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15">
+                                <Border Background="Gainsboro" CornerRadius="10" BorderThickness="2" BorderBrush="Black" Width="400">
+                                        <StackPanel Margin="0,10,10,10" Orientation="Vertical" HorizontalAlignment="Center">
+                                                <TextBox x:Name="idLangBox" Watermark="ID" Width="350" Margin="5"/>
+                                                <TextBox x:Name="LanguageBox" Watermark="Language" Width="350" Height="1" Margin="5"/>
+                                        </StackPanel>      
+                                </Border>
+                                <StackPanel>
+                                        <Button x:Name="addLang" Background="SandyBrown" Foreground="Black" FontSize="20" BorderBrush="Black" Content="Добавить запись" Click="AddLang_OnClick" Width="200" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                        <Button x:Name="delLang" Background="SandyBrown" Foreground="Black" FontSize="20" BorderBrush="Black" Content="Удалить запись" Click="DelLang_OnClick" Width="200" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                </StackPanel>
+                        </StackPanel>
+                </StackPanel>
+        </Grid>
+</Window>

@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="800"
+        Background="Lavender"
+        x:Class="UP_1.Windows.Attendance1"
+        Title="Attendance1">
+    <Grid>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <DataGrid x:Name="AttendanceDataGrid"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="False"
+                                  x:CompileBindings="False"
+                                  GridLinesVisibility="All"
+                                  BorderThickness="1"
+                                  BorderBrush="Black"
+                                  Height="250"
+                                  Margin="0,20">
+                                <DataGrid.Columns>
+                                        <DataGridTextColumn Header="ID " Binding="{Binding IDAttend}"/>
+                                        <DataGridTextColumn Header="Group" Binding="{Binding AttClient}"/>
+                                        <DataGridTextColumn Header="Course" Binding="{Binding AttCourse}"/>
+                                        <DataGridTextColumn Header="Grade" Binding="{Binding AttGrade}"/>
+                                        <DataGridTextColumn Header="Visit_persent" Binding="{Binding VisitPercent}"/>
+                                        <DataGridTextColumn Header="Date_visit" Binding="{Binding DateVisit}"/>
+                                </DataGrid.Columns>
+                        </DataGrid>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15">
+                                <Border Background="Gainsboro" CornerRadius="10" BorderThickness="2" BorderBrush="Black" Width="400">
+                                        <StackPanel Margin="0,10,10,10" Orientation="Vertical" HorizontalAlignment="Center">
+                                                <TextBox x:Name="idAttendBox" Watermark="ID" Width="350" Margin="5"/>
+                                                <TextBox x:Name="clientBox" Watermark="Client" Width="350" Margin="5"/>
+                                                <TextBox x:Name="courseBox" Watermark="Course" Width="350" Margin="5"/>
+                                                <TextBox x:Name="gradeBox" Watermark="Grade" Width="350" Margin="5"/>
+                                                <TextBox x:Name="persentBox" Watermark="Visit_persent" Width="350" Margin="5"/>
+                                                <TextBox x:Name="dateBox" Watermark="DateVisit" Width="350" Margin="5"/>
+                                        </StackPanel>
+                                </Border>
+                                <StackPanel>
+                                        <Button x:Name="addAttend" Background="SandyBrown" Foreground="Black" FontSize="20" BorderBrush="Black" Content="ДобавитьЗапись" Click="AddAttend_OnClick" Width="200" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                        <Button x:Name="delAttend" Background="SandyBrown" Foreground="Black" FontSize="20" BorderBrush="Black" Content="УдалитьЗапись" Click="DelAttend_OnClick" Width="200" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15">
+                                        <Button x:Name="orderBy" Content="Сортировать процент посещения по возрастанию" Background="SandyBrown" Foreground="Black" Click="OrderBy_OnClick"/>
+                                        <Button x:Name="orderByDescending" Content="Сортировать процент посещения по убыванию" Background="SandyBrown" Foreground="Black" Click="OrderByDescending_OnClick"></Button>
+                                </StackPanel>
+                        </StackPanel>
+                </StackPanel>
+        </Grid>
+</Window>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="UP_1/App.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Client.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Client1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Clients.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Clients1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Courses.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Courses1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/FinancialAccounting.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/FinancialAccounting1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Groups.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Groups1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Language1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/MainWindow.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Perehod.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/UP/Window1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Win.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Window.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Window1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Window2.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/AddExp1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/AddLanguage1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/AddSchedule1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/AddTeacher1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Attendance1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Client1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Client2.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Clients1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Clients2.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Courses1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Expirience1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/FinancialAccounting.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/FinancialAccounting1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Gistogram.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Groups1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Language1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Lolo.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Menu.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Perehod.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Schedule1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Teacher1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Winda.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/Window1.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/khlj.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/tyu.axaml" value="UP_1/UP_1.csproj" />
+        <entry key="UP_1/Windows/wins.axaml" value="UP_1/UP_1.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
